@@ -6,14 +6,17 @@
   box-sizing: border-box;
 }
 
+
+
+
 :root {
 
   /* Theme Colors */
-  --theme-color-olive: #116466;
-  --theme-color-dark-grey: #2c3531;
-  --theme-color-light-grey: #d1e8e2;
-  --theme-color-light-skin: #ffcb9a;
-  --theme-color-dark-skin: #d9b08c;
+  --theme-color-bg: #116466;
+  --theme-color-btns: #2c3531;
+  --theme-color-text: #ffcb9a;
+  --theme-color-text-dark: #d9b08c;
+  --theme-color-light: #d1e8e2;
 
   /* Theme Font Family */
   --theme-font-fam-primary: "Poppins", serif;
@@ -25,11 +28,27 @@
   --theme-font-size-large: 24px;
 }
 
-body {
-  background-color: var(--theme-color-olive);
-  color: var(--theme-color-light-skin);
-}
 
+/* :root {
+
+  --theme-color-olive: #3aafa9;
+  --theme-color-dark-grey: #17252a;
+  --theme-color-light-grey: #feffff;
+  --theme-color-light-skin: #def2f1;
+  --theme-color-dark-skin: #2b7a7b;
+
+
+  --theme-font-fam-primary: "Poppins", serif;
+  --theme-font-fam-secondary: "Montserrat", serif;
+
+  --theme-font-size-small: 14px;
+  --theme-font-size-medium: 18px;
+  --theme-font-size-large: 24px;
+}  */
+
+body {
+  background-color: var(--theme-color-bg);
+}
 
 
 /* Navigation */
@@ -56,7 +75,7 @@ nav a {
   padding: 0.9rem;
   border-radius: 50%;
   display: flex;
-  color: var(--color-light);
+  color: var(--theme-color-text);
   font-size: 1.1rem;
 }
 
@@ -66,5 +85,4 @@ nav a:hover {
 
 nav a.active {
   background: var(--theme-color-dark-grey);
-  color: var(--color-bg);
 }
