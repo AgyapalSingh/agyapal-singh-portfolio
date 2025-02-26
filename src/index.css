@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@500&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-:root{
+:root {
 
   /* Theme Colors */
   --theme-color-olive: #116466;
@@ -16,7 +16,7 @@
   --theme-color-dark-skin: #d9b08c;
 
   /* Theme Font Family */
-  --theme-font-fam-primary:  "Poppins", serif;
+  --theme-font-fam-primary: "Poppins", serif;
   --theme-font-fam-secondary: "Montserrat", serif;
 
   /* Font Size */
@@ -25,7 +25,46 @@
   --theme-font-size-large: 24px;
 }
 
-body{
+body {
   background-color: var(--theme-color-olive);
   color: var(--theme-color-light-skin);
+}
+
+
+
+/* Navigation */
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  height: 80px;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  bottom: 15px;
+  padding: 20px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  border-radius: 200px;
+  backdrop-filter: blur(15px);
+}
+
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+nav a.active {
+  background: var(--theme-color-dark-grey);
+  color: var(--color-bg);
 }
