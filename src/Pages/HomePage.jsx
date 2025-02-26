@@ -1,5 +1,11 @@
 import React from "react";
+import Navigation from "../Components/Navigation";
 
 export const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <>
+      Home Page
+      <Navigation />
+    </>
+  );
 };
