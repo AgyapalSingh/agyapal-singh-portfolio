@@ -65,18 +65,18 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.8rem;
+  gap: 15px;
   border-radius: 200px;
   backdrop-filter: blur(15px);
 }
 
 nav a {
   background: transparent;
-  padding: 0.9rem;
+  padding: 12px;
   border-radius: 50%;
   display: flex;
   color: var(--theme-color-text);
-  font-size: 1.1rem;
+  font-size: 18px;
 }
 
 nav a:hover {
@@ -84,5 +84,5 @@ nav a:hover {
 }
 
 nav a.active {
-  background: var(--theme-color-dark-grey);
+  background: var(--theme-color-btns);
 }
